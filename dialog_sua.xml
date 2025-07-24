@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa sản phẩm"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/primaryColor"
+        android:paddingBottom="16dp" />
+
+    <!-- Tên sản phẩm -->
+    <EditText
+        android:id="@+id/etTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Giá bán -->
+    <EditText
+        android:id="@+id/etGiaBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá bán"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Tồn kho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/etMaVach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mã vạch"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/scanner"/>
+
+    </LinearLayout>
+
+
+
+    <!-- Mô tả sản phẩm -->
+    <EditText
+        android:id="@+id/etMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả sản phẩm"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="100dp" />
+
+    <!-- Nút hành động -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <!-- Nút Lưu -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:elevation="4dp" />
+
+        <!-- Nút Huỷ -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Huỷ"
+            android:backgroundTint="@color/xam"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>
