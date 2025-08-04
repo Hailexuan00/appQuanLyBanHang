@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9FAFB"
+    tools:context=".Fragment.ThongKeFragment">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống Kê Doanh Thu"
+        android:textSize="24sp"
+        android:textColor="#37474F"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Từ ngày -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="3"
+        android:background="@drawable/input_background"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvTuNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Từ ngày"
+            android:textColor="#37474F"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/edTuNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Chọn ngày"
+            android:inputType="none"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Đến ngày -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="3"
+        android:background="@drawable/input_background"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvDenNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đến ngày"
+            android:textColor="#37474F"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/edDenNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Chọn ngày"
+            android:inputType="none"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Button Doanh Thu -->
+    <Button
+        android:id="@+id/btnDoanhThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Xem Doanh Thu"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:padding="12dp" />
+
+    <!-- TextView Doanh Thu -->
+    <TextView
+        android:id="@+id/tvDoanhThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="Doanh Thu: 0 VNĐ"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>
