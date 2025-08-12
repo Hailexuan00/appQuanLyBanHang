@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_sp">
+
+        <!-- Thông tin sản phẩm -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingEnd="8dp">
+
+            <!-- Tên sản phẩm -->
+            <TextView
+                android:id="@+id/txtTenSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#212121"/>
+
+            <!-- Giá và số lượng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/txtDonGiaSP"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="10,000đ"
+                    android:textSize="14sp"
+                    android:textColor="#FF5722"/>
+
+                <TextView
+                    android:id="@+id/txtSoLuong"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:text="x1"
+                    android:textSize="14sp"
+                    android:textColor="#212121"/>
+
+                <TextView
+                    android:id="@+id/txtGiaSP"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="10,000đ"
+                    android:textSize="14sp"
+                    android:textColor="#FF5722"
+                    android:gravity="end"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="5dp">
+
+            <ImageButton
+                android:id="@+id/btnCong"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus"
+                android:background="?attr/selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/btnTru"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/minus"
+                android:background="?attr/selectableItemBackground" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="10dp"
+    android:radius="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:id="@+id/txtNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xx/xx/xxxx"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/txtGio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xx:xx"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:id="@+id/txtMaDH"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="xx"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtUser"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtTongTien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="xxxx"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.NhanVienFragment">
+
+    <!-- RecyclerView to display the list of employees -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Floating Action Button for adding a new employee -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Add a new employee"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/timHong"
+        app:elevation="8dp" />
+
+</FrameLayout>
