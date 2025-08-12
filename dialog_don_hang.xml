@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="10dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- Mã đơn hàng -->
+        <TextView
+            android:id="@+id/txt_maDH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn hàng"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#333"/>
+
+        <!-- Ngày giờ -->
+        <TextView
+            android:id="@+id/txt_ngay_gio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày giờ"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#555"/>
+
+        <!-- Tên người dùng -->
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Người dùng"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#555"/>
+
+        <!-- Chi tiết đơn hàng -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết đơn hàng:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#333"/>
+
+        <!-- RecyclerView hiển thị sản phẩm trong đơn hàng -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvSP"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Trạng thái đơn hàng -->
+        <TextView
+            android:id="@+id/txtTrangThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#555"/>
+
+        <!-- Tổng tiền -->
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#E74C3C"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Các nút hành động -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnTraHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trả hàng"
+                android:textColor="#fff"
+                android:backgroundTint="#3498DB"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btn_huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                android:textColor="#fff"
+                android:backgroundTint="#E74C3C"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
